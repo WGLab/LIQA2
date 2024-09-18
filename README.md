@@ -7,7 +7,10 @@ LIQA2 is a computational tool for detecting and quantifying isoform expression (
 
 ## Pipeline
 ### 0. Preprocessing
+reference.py
 ### 1. Prepare annotation file
+annotation.py
 ### 2. Generate compatible matrix
+preprocessing
 ### 3. Generate count matrix
-
+count_matrix
