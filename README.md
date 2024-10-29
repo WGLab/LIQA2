@@ -11,4 +11,4 @@ annotation.py
 ### 2. Generate compatible matrix
 preprocessing
 ### 3. Generate count matrix
-count_matrix nnlklkm
+count_matrix test
