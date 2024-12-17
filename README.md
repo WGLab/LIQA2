@@ -13,6 +13,3 @@ preprocessing.py
 compatible.py
 ### 3. Generate count matrix
 count_matrix test
-Test
-
-Dec 17 test s
