@@ -10,7 +10,7 @@ reference.py
 annotation.py
 ### 2. Generate compatible matrix
 preprocessing.py
-compatible.pi
+compatible.py
 ### 3. Generate count matrix
 count_matrix test
 Test
