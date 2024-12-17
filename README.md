@@ -9,7 +9,8 @@ reference.py
 ### 1. Prepare annotation file
 annotation.py
 ### 2. Generate compatible matrix
-preprocessing
+preprocessing.py
+compatible.pi
 ### 3. Generate count matrix
 count_matrix test
 Test
