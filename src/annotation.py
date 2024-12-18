@@ -678,7 +678,7 @@ class Annotator:
                  coverage_threshold_gene, coverage_threshold_exon, coverage_threshold_splicing,z_score_threshold,
                  min_gene_size, build = None, platform = '10x', logger = None):
         """
-        target: root path to save annotation files. SCOTCH will automatically create sub folders
+        target: root path to save annotation files. LIQA2 will automatically create sub folders
         reference_gtf: path to gtf annotation (optional)
         bam_path: path to bam file, or path to the bam file folder; can be a str for a single sample, or a list for multiple samples
         update_gtf: whether to update gtf annotation using bam file

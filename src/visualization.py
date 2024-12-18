@@ -36,7 +36,7 @@ def merge_gtf_files(gtf_paths: list, out_path=None):
 
 def generate_subbam_subgtf_single_sample(gene, bamFile, target, novel_pct=0.1):
     out_path = os.path.join(target, 'visualization', gene)
-    gtf_path = os.path.join(target, 'reference/SCOTCH_updated_annotation_filtered.gtf')
+    gtf_path = os.path.join(target, 'reference/LIQA2_updated_annotation_filtered.gtf')
     if not os.path.exists(out_path):
         os.makedirs(out_path, exist_ok=True)
     filtered_gtf, transcript_ids, gene_chr, gene_start, gene_end, gene_strand = sub_gtf(gene, gtf_path, out_path=None)
