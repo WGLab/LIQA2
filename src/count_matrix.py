@@ -411,5 +411,5 @@ class CountMatrix:
                     gene_name = self._extract_attribute(attributes, 'gene_name')
                     transcript_id = self._extract_attribute(attributes, 'transcript_id')
                     if gene_name in self.novel_isoform_del_dict and transcript_id in self.novel_isoform_del_dict[gene_name]:
-                        continue
+                        continue #
                     outfile.write(line)

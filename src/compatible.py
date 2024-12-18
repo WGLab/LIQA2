@@ -30,7 +30,7 @@ def convert_to_gtf(metageneStructureInformationNovel, output_file, gtf_df = None
                     exons_isoform.append(exonInfo[exon_index])
                 merged_exons_isoform = merge_exons(exons_isoform)
                 for exon_num, (exon_start, exon_end) in enumerate(merged_exons_isoform, start=1):
-                    new_rows_exon = [geneInfo['geneChr'], 'LIQA2', 'exon', exon_start+1, exon_end, '.',
+                    new_rows_exon = [geneInfo['geneChr'], 'LIQA2 ', 'exon', exon_start+1, exon_end, '.',
                                      geneInfo['geneStrand'], '.',
                                      f'gene_id "{geneID}"; gene_name "{geneInfo["geneName"]}"; transcript_id "{isoform_name}"; transcript_name "{isoform_name}"; exon_number "{exon_num}"']
                     new_rows_isoforms.append(new_rows_exon)
