@@ -4,12 +4,15 @@ LIQA2 is a computational tool for detecting and quantifying isoform expression (
 ## Installation
 
 ## Pipeline
-### 0. Preprocessing
-reference.py
+The main function for running the LIQA2 pipeline is `main_preprocessing.py`. There are 4 steps, marked by the --task [step] command.
+main_preprocessing.py is the primary function for running the SCOTCH preprocessing pipeline. This pipeline consists of four steps: (1) generating gene annotation files (--task annotation), (2) generating the compatibility matrix (--task 'compatible matrix'), (3) summarizing novel gene annotations(--task summary), and (4) generating the count matrix (--task 'count matrix'). We will cover more details below. SCOTCH is currently compatible with several platforms (set: --platform 10x-ont or --platform 10x-pacbio or parse-ont)
+
+
 ### 1. Prepare annotation file
-annotation.py
+--task annotation
 ### 2. Generate compatible matrix
-preprocessing.py
-compatible.py
-### 3. Generate count matrix
-count_matrix test
+--task compatible matrix
+### 3. Summarize novel gene annotations
+--task summary
+### 4. Generate count matrix
+--task count matrix
