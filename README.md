@@ -6,6 +6,10 @@ LIQA2 is a computational tool for detecting and quantifying isoform expression (
 ## Pipeline
 The main function for running the LIQA2 pipeline is `main_preprocessing.py`. There are 4 steps, marked by the --task [step] command.
 
+  
+### 1. Prepare annotation file
+The first step of the LIQA2 pipeline involves generaing annotation files from the reference genome and indexed/tagged BAM files. This is done with `--task annotation`. 
+
 Arguments include:
 - `--target`: path to output location(s)
 - `--bam`: path to bam location(s)
@@ -15,9 +19,7 @@ Arguments include:
 - `--workers`: threads for parallel processing
 - `--coverage_threshod_exon`: coverage threshold for exon discovery as a percent of maximum coverage. Default is 0.02, larger values are more conservative
 
-  
-### 1. Prepare annotation file
-The first step of the LIQA2 pipeline involves generaing annotation files from the reference genome and indexed/tagged BAM files. This is done with `--task annotation`. Below is a sample command that can be run.
+Below is a sample command that can be run.
 
 ```
 python3 src/main_preprocessing.py \
@@ -29,9 +31,19 @@ python3 src/main_preprocessing.py \
 --reference_pkl data/geneStructureInformation.pkl \
 --workers 30
 ```
---task annotation
+There are 3 different modes of annotation.
+
+Example output:
+
 ### 2. Generate compatible matrix
---task compatible matrix
+Example command:
+```
+python3 src/main_preprocessing.py \
+--task 'compatible matrix' \
+--target path/to/output/folder/of/sample1 path/to/output/folder/of/sample2 \
+--bam path/to/bam/file/or/bamfolder/sample1 path/to/bam/file/or/bamfolder/sample2 \
+--reference path/to/reference/genes.gtf
+```
 ### 3. Summarize novel gene annotations
 --task summary
 ### 4. Generate count matrix
