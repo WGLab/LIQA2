@@ -45,6 +45,18 @@ python3 src/main_preprocessing.py \
 --reference path/to/reference/genes.gtf
 ```
 ### 3. Summarize novel gene annotations
---task summary
+Example command:
+```
+python3 src/main_preprocessing.py \
+--task 'summary' \
+--target path/to/output/folder/
+```
 ### 4. Generate count matrix
---task count matrix
+Example command:
+```
+python3 src/main_preprocessing.py \
+--task 'count matrix' \
+--target path/to/output/folder/ \
+--platform 10x-ont
+--workers 8 --group_novel
+```
