@@ -2,6 +2,10 @@
 LIQA2 is a computational tool for detecting and quantifying isoform expression (including novel isoforms) from long read sequencing. The tool uses a meta-regression model to quantify differential alternative splicing and incorporates a targeted approach to correct for 3' and 5' biases.
 
 ## Installation
+```
+git clone https://github.com/WGLab/LIQA2.git
+cd LIQA2
+```
 
 ## Pipeline
 The main function for running the LIQA2 pipeline is `main_preprocessing.py`. There are 4 steps, marked by the --task [step] command.
