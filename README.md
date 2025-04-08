@@ -81,3 +81,7 @@ python3 src/main_preprocessing.py \
 --platform 10x-ont
 --workers 8 --group_novel
 ```
+With these steps, you should be able to generate counts that you can use for expression analysis or further study.
+
+## Citation
+Gouru, A., Xu, Z., Wang, K. “LIQA2: Efficient Isoform Detection and Quantification from Long Read Sequencing,” October 2024. International Conference on Intelligent Biology and Medicine, Houston, TX.
